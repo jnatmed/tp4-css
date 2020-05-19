@@ -1,32 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        table{
+            text-align: center;
+            border: 1px solid black;
+            border-left: 1px solid #cbd2dd;
+            /* border-spacing: 0; */
+        }
+        th{
+            background-color: white; 
+        }
+
+        td{
+            border: #cbd2dd;
+        }
+
+        #th_title{
+            background-color:blue; 
+            border-top: blue;
+            border-left: blue;
+            color: white;;
+        }
+
+        tr:nth-child(even){
+            background-color: #cbd2dd;
+        }
+
+        #tp_final{
+            background-color: red;
+            color: white;
+        }
+        #tfoot{
+            background-color: teal;
+        }
+    </style>
 </head>
 <body>
-    <table border="2">
+    <table>
         <tr>
-            <td rowspan="2">Fecha de Entrega</td>
-            <td>TP1</td>
-            <td>TP2</td>
-            <td>TP3</td>
-            <td>TP4</td>
-            <td>TP5</td>
-            <td>TP6</td>
-            <td>TP</td>
+            <th id="th_title" rowspan="2">Fecha de Entrega</th>
+            <th>TP1</th>
+            <th>TP2</th>
+            <th>TP3</th>
+            <th>TP4</th>
+            <th>TP5</th>
+            <th>TP6</th>
+            <th>TP</th>
         </tr>
         <tr>
-            <td>Maquetado</td>
-            <td>Intro a Backend</td>
-            <td>Programacion FrontEnd</td>
-            <td>CSS</td>
-            <td>Programacion en BackEnd</td>
-            <td>Canvas</td>
-            <td>Integrador</td>
+            <th>Maquetado</th>
+            <th>Intro a Backend</th>
+            <th>Programacion FrontEnd</th>
+            <th>CSS</th>
+            <th>Programacion en BackEnd</th>
+            <th>Canvas</th>
+            <th>Integrador</th>
         </tr>
         <tr>
             <td>17/08</td>
             <td rowspan="3">
-                <img src="img/html-5.png" alt="html-5" width="100%" height="100%">
+                <img src="img/img_tabla/html-5.png" alt="html-5" width="100%" height="100%">
             </td>
             <td></td>
             <td></td>
@@ -130,7 +164,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td rowspan="6" bgcolor="#FF0000"></td>
+            <td id="tp_final" rowspan="7">TP FINAL</td>
         </tr>
         <tr>
             <td>02/11</td>
@@ -168,7 +202,7 @@
             <td></td>
             <td></td>
         </tr>
-        <tr>
+        <tr id="tfoot">
             <td>30/11</td>
             <td></td>
             <td></td>

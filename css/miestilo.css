@@ -1,0 +1,11 @@
+.principal {grid-area : principal;
+            background-color: cornsilk;
+}
+.perfil_cv {grid-area: perfil-cv;
+            background-color: crimson;
+}
+.contenido{
+    display : grid;
+    grid-template-areas: 'principal perfil-cv';
+    background-color: cornflowerblue;
+}
