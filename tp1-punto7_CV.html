@@ -9,14 +9,11 @@
         .principal{
             display: grid;
             grid-template-columns: 3fr 1fr;
-            grid-template-rows: 100vh min-content 1fr max-content;
+            /* grid-template-rows: 100vh min-content 1fr max-content; */
             grid-template-areas:
             "bloque_izq bloque_der";
         }
-        .bloque_der{
-            background-color: #e4d4cb;
-            grid-area: bloque_der;
-        }
+
         .bloque_izq{
             grid-area: bloque_izq;
         }
@@ -30,10 +27,38 @@
             text-align: center;
         }
         #titulo{
-            background-color: #1a1919;
+            margin-block-start: 0;
             color: #e4d4cb;
-            
+            padding-right: 20px;
         }
+        #titulo > h1{
+            background-color: #1a1919;
+        }
+        #skills, #languajes, #information{
+            text-align: left;
+            padding: 10px;
+        }
+        .bloque_der{
+            background-color: #e4d4cb;
+            padding: 10px;
+            grid-area: bloque_der;
+        }
+        #q-python::before { 
+            content: "*";
+            color: rgb(47, 47, 47);
+        }
+        #q-python::after { 
+            content: "*";
+            color: rgb(195, 187, 187);
+        }
+        /* #languajes{
+            text-align: left;
+            padding: 10px;
+        }
+        #information{
+            text-align: left;
+            padding: 10px;
+        } */
     </style>
     <!-- <link rel="stylesheet" href="css/miestilo.css"> -->
 </head>
@@ -47,17 +72,21 @@
     
             <article id="work_experience">
                 <h2>Work Experience</h2>
-                <ul>
-                    <li>2010 - 2011 : Mecanica Integral (Ituzaingo - BsAs)</li>
-                    <li>2011 - actualidad : Funcionario Publico (Servicio Penitenciario Federal)</li>
-                </ul>
+                <dl>
+                    <dt>2010 - 2011 : </dt>
+                    <dd> Mecanica Integral (Ituzaingo - BsAs)</dd>
+                <dt>2011 - actualidad : </dt>
+                    <dd> Funcionario Publico (Servicio Penitenciario Federal)</dd>
+                </dl>
             </article>
             <article id="education">
                 <h2>Educacion</h2>
-                <ul>
-                    <li>2003 - 2007: Escuela de Educacion Tecnica Nº1 de Merlo. Tenico Electronico. Promedio 8,22</li>
-                    <li>2006 : Universidad Nacional de Lujan - 98% carrera</li>
-                </ul>
+                <dl>
+                    <dt>2003 - 2007: </dt>
+                      <dd>Escuela de Educacion Tecnica Nº1 de Merlo. Tenico Electronico. Promedio 8,22</dd>
+                    <dt>2006 : Universidad Nacional de Lujan: </dt>
+                      <dd>98% carrera</dd>
+                </dl>
             </article>
             <article id="didactic">
                 <h2>Expediencia Didactica y Reconocimientos</h2>
@@ -92,12 +121,12 @@
                 <ul>
                     <li>Lenguajes de Programacion
                         <ul>
-                            <li>Python (avanzado)</li>
-                            <li>Java (basico)</li>
-                            <li>Perl</li>
-                            <li>Pascal (pasico)</li>
-                            <li>Visual Basic (avanzado)</li>
-                            <li>Php (Basico)</li>
+                            <li>Python (avanzado) <q id="q-python">****</q><q id="q-python">*</q></li>
+                            <li>Java (basico) <q id="q-java">**</q><q id="q-java">***</q></li>
+                            <li>Perl (basico) <q id="q-perl">**</q><q id="q-perl">***</q></li>
+                            <li>Pascal (basico) <q id="q-pascal">**</q><q id="q-pascal">***</q></li>
+                            <li>Visual Basic (avanzado) <q id="q-visual">****</q><q id="q-visual">*</q></li>
+                            <li>Php (avanzado) <q id="q-php">****</q><q id="q-php">*</q></li>
                         </ul>
                     </li>
                 </ul>
